@@ -7,7 +7,7 @@ load_dotenv()
 
 
 # You can replace this with an environment variable if needed
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+API_KEY = os.getenv("APIFY_API_KEY")
 ACTOR_ID = "2SyF0bVxmgGr8IVCZ"
 
 client = ApifyClient(API_KEY)
