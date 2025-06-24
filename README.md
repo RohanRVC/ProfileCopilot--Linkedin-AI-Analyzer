@@ -23,46 +23,7 @@ This app turns any LinkedIn profile into a career advantage. It can:
 
 ---
 
-## 🛠️ Features
 
-| Feature                              | Description |
-|--------------------------------------|-------------|
-| 🕵️‍♂️ LinkedIn Scraper                 | Uses Apify Actor to scrape full profile |
-| 🤖 Multi-Agent LangGraph System       | Each agent handles a different task (analysis, match, rewrite) |
-| 🧠 Persistent Memory                  | Stores profile, target job, and chat history per user |
-| 💬 AI Chat Assistant                  | Remembers you, your goal, and gives tailored advice |
-| 🪄 Auto Role Prediction               | If no job is given, it guesses from profile |
-| 🔄 Reset Button                      | Clears memory and starts a fresh session |
-
----
-
-## 📂 Project Structure
-
-linkedin-ai-bot/
-│
-├── app.py # Streamlit main app
-├── requirements.txt # All dependencies
-├── README.md # This file
-│
-├── utils/
-│ ├── apify_scraper.py # LinkedIn scraper via Apify
-│ ├── role_predictor.py # Infers role from scraped profile
-│ ├── openrouter_chat.py # Sends prompts to OpenRouter LLMs
-│ ├── memory_store.py # Save/load persistent memory
-│
-├── agents/
-│ ├── profile_analyzer.py # Agent for profile feedback
-│ ├── job_matcher.py # Agent for match scoring
-│ ├── content_rewriter.py # Agent to rewrite + suggest skills
-│
-├── langgraph_flow/
-│ └── flow_builder.py # LangGraph nodes and pipeline
-│
-└── .streamlit/
-└── config.toml # UI tweaks (optional)
-
-
----
 
 ## 📦 Requirements
 
