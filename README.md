@@ -61,9 +61,6 @@ linkedin-ai-bot/
 └── .streamlit/
 └── config.toml # UI tweaks (optional)
 
-yaml
-Copy
-Edit
 
 ---
 
