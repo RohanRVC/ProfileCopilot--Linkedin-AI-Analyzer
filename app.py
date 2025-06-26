@@ -55,7 +55,7 @@ st.markdown("""
 
 # --- Inputs ---
 linkedin_url = st.text_input("🔗 Enter your LinkedIn profile URL:")
-target_job = st.text_input("🎯 Enter your Target Job Role (e.g., AI Engineer) (optional):")
+target_job = st.text_input("🎯 Enter your Target Job Role (e.g., AI Engineer, Media Planner)   \n   (🙅🏻‍♂️🙅🏻‍♀️Optional-:Leave it empty let AI analyze it for you💪🏻🤖...):")
 
 # --- Analyze ---
 if st.button("✨ Analyze Profile"):
